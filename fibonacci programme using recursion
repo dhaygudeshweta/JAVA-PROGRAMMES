@@ -1,0 +1,26 @@
+public class Project {
+	
+	static int a=0,b=1,c=0;
+	static void PrintFibo(int count)
+	{
+		if(count>0)
+		{
+			c=a+b;
+			a=b;b=c;
+			System.out.println(""+c);
+			PrintFibo(count-1);
+		}
+	}
+	
+	public static void main(String args[])
+	{
+		int count=10;
+		
+	
+		System.out.println(""+a);
+		System.out.println(""+b);
+		PrintFibo(count -2);
+	}
+          
+	}
+	
