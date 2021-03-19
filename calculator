@@ -1,0 +1,47 @@
+import java.util.Scanner; 
+
+public class Project {
+	
+	public static void main(String args[])
+	{
+		Scanner s=new Scanner (System.in);
+		System.out.println("enetr numbers");
+		double first=s.nextDouble();
+		double second=s.nextDouble();
+		System.out.println("enetr an operator + - * /");
+		char operator = s.next().charAt(0);
+		double result;
+
+		switch(operator)
+		{
+		case '+' :
+			result=first+second;
+			break;
+			
+			
+		case '-':
+			result =first -second;
+			break;
+			
+		case '*' :
+			
+			result=first*second;
+			break;
+			
+			
+		case '/':
+			result=first /second;
+			break;
+			
+			
+		case 5:
+			default :
+				
+				System.out.println("invalid operator ");
+			return;
+		}
+		System.out.println("ans is "+result);
+		
+	}
+}
+	
